@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="EasyGolfWatch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="47" alignment="center" text="0" textAlignment="center" id="57v-yN-ZLe">
+                            <color key="textColor" red="0.96047418770000004" green="1" blue="0.2012573456" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <label width="136" height="50" alignment="center" text="&lt;swipe&gt;" textAlignment="center" id="KQa-HT-TJt">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer direction="2" id="KOx-kv-Fvx" userLabel="Left Swipe Gesture Recognizer">
+                                    <connections>
+                                        <action selector="swipeLeft:" destination="AgC-eL-Hgc" id="B4e-it-MYj"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer id="LmL-WK-tl6" userLabel="Right Swipe Gesture Recognizer">
+                                    <connections>
+                                        <action selector="swipeRight:" destination="AgC-eL-Hgc" id="NoO-hH-K7t"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                            <color key="textColor" red="0.96047418770000004" green="1" blue="0.2012573456" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <button width="1" alignment="left" title="Update" id="at1-T6-dp9">
+                            <color key="titleColor" red="0.14394638267012472" green="1" blue="0.36897395440573422" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                            <connections>
+                                <action selector="updateDistance" destination="AgC-eL-Hgc" id="IQc-kU-dPC"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lblDist" destination="57v-yN-ZLe" id="yaM-ml-We3"/>
+                        <outlet property="lblHole" destination="KQa-HT-TJt" id="RMX-VO-t17"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="218.82051282051285" y="343.92307692307696"/>
+        </scene>
+    </scenes>
+</document>

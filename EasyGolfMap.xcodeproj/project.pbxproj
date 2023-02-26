@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D245CBC92628112D00BEAA5E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CBC72628112D00BEAA5E /* WatchSessionManager.swift */; };
+		D245CBCA2628112D00BEAA5E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CBC72628112D00BEAA5E /* WatchSessionManager.swift */; };
+		D245CBCB2628112D00BEAA5E /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CBC82628112D00BEAA5E /* RequestType.swift */; };
+		D245CBCC2628112D00BEAA5E /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CBC82628112D00BEAA5E /* RequestType.swift */; };
+		D2AE3C6D262426C800F2F1D8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AE3C6B262426C800F2F1D8 /* Interface.storyboard */; };
+		D2AE3C6F262426CA00F2F1D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AE3C6E262426CA00F2F1D8 /* Assets.xcassets */; };
+		D2AE3C76262426CB00F2F1D8 /* EasyGolfWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2AE3C75262426CB00F2F1D8 /* EasyGolfWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2AE3C7B262426CB00F2F1D8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE3C7A262426CB00F2F1D8 /* InterfaceController.swift */; };
+		D2AE3C7D262426CB00F2F1D8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE3C7C262426CB00F2F1D8 /* ExtensionDelegate.swift */; };
+		D2AE3C83262426CB00F2F1D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AE3C82262426CB00F2F1D8 /* Assets.xcassets */; };
+		D2AE3C88262426CB00F2F1D8 /* EasyGolfWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D2AE3C69262426C800F2F1D8 /* EasyGolfWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2AFC2FC261798BA006424BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AFC2FB261798BA006424BC /* Assets.xcassets */; };
+		D2AFC2FF261798BA006424BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AFC2FD261798BA006424BC /* LaunchScreen.storyboard */; };
+		D2AFC30A2617B138006424BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AFC3082617B138006424BC /* Main.storyboard */; };
+		D2AFC3152617B2BC006424BC /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC30E2617B2BB006424BC /* InfoVC.swift */; };
+		D2AFC3192617B2BC006424BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC3122617B2BC006424BC /* AppDelegate.swift */; };
+		D2AFC31A2617B2BC006424BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC3132617B2BC006424BC /* SceneDelegate.swift */; };
+		D2AFC32B2617C85F006424BC /* EasyGolfMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC3292617C85F006424BC /* EasyGolfMap.xcdatamodeld */; };
+		D2AFC3302617C8D7006424BC /* Ranges+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC32E2617C8D6006424BC /* Ranges+CoreDataClass.swift */; };
+		D2AFC3312617C8D7006424BC /* Ranges+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC32F2617C8D6006424BC /* Ranges+CoreDataProperties.swift */; };
+		D2AFC3342617C93C006424BC /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC3332617C93C006424BC /* CoreDataController.swift */; };
+		D2B82363261DD89B00267672 /* Setup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B82361261DD89B00267672 /* Setup+CoreDataProperties.swift */; };
+		D2B82383261E475200267672 /* Setup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8237F261E475200267672 /* Setup+CoreDataClass.swift */; };
+		D2B8238C261E490C00267672 /* SetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B82389261E490C00267672 /* SetupVC.swift */; };
+		D2B8238D261E490C00267672 /* MapMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8238A261E490C00267672 /* MapMainVC.swift */; };
+		D2B8238E261E490C00267672 /* MapCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8238B261E490C00267672 /* MapCourseVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2AE3C77262426CB00F2F1D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2AFC2E4261798B8006424BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AE3C74262426CB00F2F1D8;
+			remoteInfo = "EasyGolfWatch Extension";
+		};
+		D2AE3C86262426CB00F2F1D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2AFC2E4261798B8006424BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AE3C68262426C800F2F1D8;
+			remoteInfo = EasyGolfWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2AE3C89262426CC00F2F1D8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D2AE3C88262426CB00F2F1D8 /* EasyGolfWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AE3C8C262426CC00F2F1D8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2AE3C76262426CB00F2F1D8 /* EasyGolfWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D2167FA1262B820A00E01D3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Interface.strings; sourceTree = "<group>"; };
+		D245CBC72628112D00BEAA5E /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		D245CBC82628112D00BEAA5E /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		D2AE3C69262426C800F2F1D8 /* EasyGolfWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyGolfWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AE3C6C262426C800F2F1D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D2AE3C6E262426CA00F2F1D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2AE3C70262426CA00F2F1D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2AE3C75262426CB00F2F1D8 /* EasyGolfWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EasyGolfWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AE3C7A262426CB00F2F1D8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D2AE3C7C262426CB00F2F1D8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D2AE3C82262426CB00F2F1D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2AE3C84262426CB00F2F1D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2AFC2EC261798B8006424BC /* EasyGolfMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyGolfMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AFC2FB261798BA006424BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2AFC2FE261798BA006424BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2AFC300261798BA006424BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2AFC3092617B138006424BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2AFC30E2617B2BB006424BC /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		D2AFC3122617B2BC006424BC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2AFC3132617B2BC006424BC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2AFC32A2617C85F006424BC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D2AFC32E2617C8D6006424BC /* Ranges+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ranges+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D2AFC32F2617C8D6006424BC /* Ranges+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ranges+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D2AFC3332617C93C006424BC /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		D2B82361261DD89B00267672 /* Setup+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Setup+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D2B8237F261E475200267672 /* Setup+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Setup+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D2B82389261E490C00267672 /* SetupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupVC.swift; sourceTree = "<group>"; };
+		D2B8238A261E490C00267672 /* MapMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMainVC.swift; sourceTree = "<group>"; };
+		D2B8238B261E490C00267672 /* MapCourseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCourseVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AE3C72262426CB00F2F1D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AFC2E9261798B8006424BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D245CBC62628112D00BEAA5E /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				D245CBC72628112D00BEAA5E /* WatchSessionManager.swift */,
+				D245CBC82628112D00BEAA5E /* RequestType.swift */,
+			);
+			name = Commons;
+			path = EasyGolfMap/Commons;
+			sourceTree = SOURCE_ROOT;
+		};
+		D2AE3C6A262426C800F2F1D8 /* EasyGolfWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D2AE3C6B262426C800F2F1D8 /* Interface.storyboard */,
+				D2AE3C6E262426CA00F2F1D8 /* Assets.xcassets */,
+				D2AE3C70262426CA00F2F1D8 /* Info.plist */,
+			);
+			path = EasyGolfWatch;
+			sourceTree = "<group>";
+		};
+		D2AE3C79262426CB00F2F1D8 /* EasyGolfWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D2AE3C7A262426CB00F2F1D8 /* InterfaceController.swift */,
+				D2AE3C7C262426CB00F2F1D8 /* ExtensionDelegate.swift */,
+				D2AE3C82262426CB00F2F1D8 /* Assets.xcassets */,
+				D2AE3C84262426CB00F2F1D8 /* Info.plist */,
+			);
+			path = "EasyGolfWatch Extension";
+			sourceTree = "<group>";
+		};
+		D2AFC2E3261798B8006424BC = {
+			isa = PBXGroup;
+			children = (
+				D2AFC2EE261798B8006424BC /* EasyGolfMap */,
+				D2AE3C6A262426C800F2F1D8 /* EasyGolfWatch */,
+				D2AE3C79262426CB00F2F1D8 /* EasyGolfWatch Extension */,
+				D2AFC2ED261798B8006424BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2AFC2ED261798B8006424BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AFC2EC261798B8006424BC /* EasyGolfMap.app */,
+				D2AE3C69262426C800F2F1D8 /* EasyGolfWatch.app */,
+				D2AE3C75262426CB00F2F1D8 /* EasyGolfWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2AFC2EE261798B8006424BC /* EasyGolfMap */ = {
+			isa = PBXGroup;
+			children = (
+				D2B8237F261E475200267672 /* Setup+CoreDataClass.swift */,
+				D2B82361261DD89B00267672 /* Setup+CoreDataProperties.swift */,
+				D2AFC32E2617C8D6006424BC /* Ranges+CoreDataClass.swift */,
+				D2AFC32F2617C8D6006424BC /* Ranges+CoreDataProperties.swift */,
+				D2AFC2FB261798BA006424BC /* Assets.xcassets */,
+				D2AFC3122617B2BC006424BC /* AppDelegate.swift */,
+				D2AFC3132617B2BC006424BC /* SceneDelegate.swift */,
+				D2AFC3332617C93C006424BC /* CoreDataController.swift */,
+				D2AFC30E2617B2BB006424BC /* InfoVC.swift */,
+				D2B82389261E490C00267672 /* SetupVC.swift */,
+				D2B8238B261E490C00267672 /* MapCourseVC.swift */,
+				D2B8238A261E490C00267672 /* MapMainVC.swift */,
+				D2AFC3082617B138006424BC /* Main.storyboard */,
+				D2AFC2FD261798BA006424BC /* LaunchScreen.storyboard */,
+				D2AFC3292617C85F006424BC /* EasyGolfMap.xcdatamodeld */,
+				D2AFC300261798BA006424BC /* Info.plist */,
+				D245CBC62628112D00BEAA5E /* Commons */,
+			);
+			path = EasyGolfMap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2AE3C68262426C800F2F1D8 /* EasyGolfWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2AE3C90262426CC00F2F1D8 /* Build configuration list for PBXNativeTarget "EasyGolfWatch" */;
+			buildPhases = (
+				D2AE3C67262426C800F2F1D8 /* Resources */,
+				D2AE3C8C262426CC00F2F1D8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2AE3C78262426CB00F2F1D8 /* PBXTargetDependency */,
+			);
+			name = EasyGolfWatch;
+			productName = EasyGolfWatch;
+			productReference = D2AE3C69262426C800F2F1D8 /* EasyGolfWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D2AE3C74262426CB00F2F1D8 /* EasyGolfWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2AE3C8F262426CC00F2F1D8 /* Build configuration list for PBXNativeTarget "EasyGolfWatch Extension" */;
+			buildPhases = (
+				D2AE3C71262426CB00F2F1D8 /* Sources */,
+				D2AE3C72262426CB00F2F1D8 /* Frameworks */,
+				D2AE3C73262426CB00F2F1D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EasyGolfWatch Extension";
+			productName = "EasyGolfWatch Extension";
+			productReference = D2AE3C75262426CB00F2F1D8 /* EasyGolfWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		D2AFC2EB261798B8006424BC /* EasyGolfMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2AFC303261798BA006424BC /* Build configuration list for PBXNativeTarget "EasyGolfMap" */;
+			buildPhases = (
+				D66ACC520BBFA28AA39E1E68 /* [CP] Check Pods Manifest.lock */,
+				D2AFC2E8261798B8006424BC /* Sources */,
+				D2AFC2E9261798B8006424BC /* Frameworks */,
+				D2AFC2EA261798B8006424BC /* Resources */,
+				10F9A000AF80C654100AC2E9 /* [CP] Embed Pods Frameworks */,
+				2A81A783F104F1E222FB4D0A /* [CP] Copy Pods Resources */,
+				D2AE3C89262426CC00F2F1D8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2AE3C87262426CB00F2F1D8 /* PBXTargetDependency */,
+			);
+			name = EasyGolfMap;
+			productName = EasyGolfMap;
+			productReference = D2AFC2EC261798B8006424BC /* EasyGolfMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2AFC2E4261798B8006424BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D2AE3C68262426C800F2F1D8 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					D2AE3C74262426CB00F2F1D8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D2AFC2EB261798B8006424BC = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = D2AFC2E7261798B8006424BC /* Build configuration list for PBXProject "EasyGolfMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2AFC2E3261798B8006424BC;
+			productRefGroup = D2AFC2ED261798B8006424BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AFC2EB261798B8006424BC /* EasyGolfMap */,
+				D2AE3C68262426C800F2F1D8 /* EasyGolfWatch */,
+				D2AE3C74262426CB00F2F1D8 /* EasyGolfWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2AE3C67262426C800F2F1D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AE3C6F262426CA00F2F1D8 /* Assets.xcassets in Resources */,
+				D2AE3C6D262426C800F2F1D8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AE3C73262426CB00F2F1D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AE3C83262426CB00F2F1D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AFC2EA261798B8006424BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AFC30A2617B138006424BC /* Main.storyboard in Resources */,
+				D2AFC2FF261798BA006424BC /* LaunchScreen.storyboard in Resources */,
+				D2AFC2FC261798BA006424BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10F9A000AF80C654100AC2E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		2A81A783F104F1E222FB4D0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		D66ACC520BBFA28AA39E1E68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AE3C71262426CB00F2F1D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AE3C7D262426CB00F2F1D8 /* ExtensionDelegate.swift in Sources */,
+				D2AE3C7B262426CB00F2F1D8 /* InterfaceController.swift in Sources */,
+				D245CBCA2628112D00BEAA5E /* WatchSessionManager.swift in Sources */,
+				D245CBCC2628112D00BEAA5E /* RequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AFC2E8261798B8006424BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AFC3192617B2BC006424BC /* AppDelegate.swift in Sources */,
+				D2B82383261E475200267672 /* Setup+CoreDataClass.swift in Sources */,
+				D2B82363261DD89B00267672 /* Setup+CoreDataProperties.swift in Sources */,
+				D2AFC3302617C8D7006424BC /* Ranges+CoreDataClass.swift in Sources */,
+				D2AFC3312617C8D7006424BC /* Ranges+CoreDataProperties.swift in Sources */,
+				D2AFC3342617C93C006424BC /* CoreDataController.swift in Sources */,
+				D2B8238D261E490C00267672 /* MapMainVC.swift in Sources */,
+				D2B8238C261E490C00267672 /* SetupVC.swift in Sources */,
+				D245CBC92628112D00BEAA5E /* WatchSessionManager.swift in Sources */,
+				D245CBCB2628112D00BEAA5E /* RequestType.swift in Sources */,
+				D2B8238E261E490C00267672 /* MapCourseVC.swift in Sources */,
+				D2AFC31A2617B2BC006424BC /* SceneDelegate.swift in Sources */,
+				D2AFC3152617B2BC006424BC /* InfoVC.swift in Sources */,
+				D2AFC32B2617C85F006424BC /* EasyGolfMap.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2AE3C78262426CB00F2F1D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AE3C74262426CB00F2F1D8 /* EasyGolfWatch Extension */;
+			targetProxy = D2AE3C77262426CB00F2F1D8 /* PBXContainerItemProxy */;
+		};
+		D2AE3C87262426CB00F2F1D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AE3C68262426C800F2F1D8 /* EasyGolfWatch */;
+			targetProxy = D2AE3C86262426CB00F2F1D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2AE3C6B262426C800F2F1D8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2AE3C6C262426C800F2F1D8 /* Base */,
+				D2167FA1262B820A00E01D3A /* en */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		D2AFC2FD261798BA006424BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2AFC2FE261798BA006424BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2AFC3082617B138006424BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2AFC3092617B138006424BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2AE3C8A262426CC00F2F1D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQG6KVBMST;
+				IBSC_MODULE = EasyGolfWatch_Extension;
+				INFOPLIST_FILE = EasyGolfWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BigWells.EasyGolfMap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyGolfWatch Extension/EasyGolfWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		D2AE3C8B262426CC00F2F1D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQG6KVBMST;
+				IBSC_MODULE = EasyGolfWatch_Extension;
+				INFOPLIST_FILE = EasyGolfWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BigWells.EasyGolfMap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyGolfWatch Extension/EasyGolfWatch-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		D2AE3C8D262426CC00F2F1D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQG6KVBMST;
+				INFOPLIST_FILE = "EasyGolfWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BigWells.EasyGolfMap.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		D2AE3C8E262426CC00F2F1D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQG6KVBMST;
+				INFOPLIST_FILE = "EasyGolfWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BigWells.EasyGolfMap.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		D2AFC301261798BA006424BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2AFC302261798BA006424BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2AFC304261798BA006424BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQG6KVBMST;
+				INFOPLIST_FILE = EasyGolfMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BigWells.EasyGolfMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2AFC305261798BA006424BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQG6KVBMST;
+				INFOPLIST_FILE = EasyGolfMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BigWells.EasyGolfMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2AE3C8F262426CC00F2F1D8 /* Build configuration list for PBXNativeTarget "EasyGolfWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AE3C8D262426CC00F2F1D8 /* Debug */,
+				D2AE3C8E262426CC00F2F1D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2AE3C90262426CC00F2F1D8 /* Build configuration list for PBXNativeTarget "EasyGolfWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AE3C8A262426CC00F2F1D8 /* Debug */,
+				D2AE3C8B262426CC00F2F1D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2AFC2E7261798B8006424BC /* Build configuration list for PBXProject "EasyGolfMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AFC301261798BA006424BC /* Debug */,
+				D2AFC302261798BA006424BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2AFC303261798BA006424BC /* Build configuration list for PBXNativeTarget "EasyGolfMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AFC304261798BA006424BC /* Debug */,
+				D2AFC305261798BA006424BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2AFC3292617C85F006424BC /* EasyGolfMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2AFC32A2617C85F006424BC /* Model.xcdatamodel */,
+			);
+			currentVersion = D2AFC32A2617C85F006424BC /* Model.xcdatamodel */;
+			path = EasyGolfMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2AFC2E4261798B8006424BC /* Project object */;
+}
